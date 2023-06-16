@@ -1,7 +1,8 @@
 # include<stdio.h>
-
-/*
- * print strings
+/**
+ * main -print string
+ * Description: print string
+ * Return: 0
  */
 int main(void)
 {
