@@ -1,31 +1,28 @@
-#include<stdio.h>
-
+#include "main.h"
 /**
-*print_triangle - prints
+*print_triangle - prints a triangle
 *
-*Return: 0
+*Return:returns nothing
 */
-void print_triangle(int size);
-
-/**
-*main - check code
-*
-*Return : 0
-*/
-
-
-void print_triangle(int size) 
+void print_triangle(int size)
 {
-    if (size <= 0) {
-        putchar('\n');
-        return;
-    }
+int inct1, inct2;
 
-    int row, column;
-    for (row = 1; row <= size; row++) {
-        for (column = 1; column <= row; column++) {
-            putchar('#');
-        }
-        putchar('\n');
-    }
+if (size > 0)
+{
+for (inct1 = 1; inct1 <= size; inct1++)
+{
+for ((inct2 = size - inct1); inct2 > 0; inct2--)
+_putchar(' ');
+
+for (inct2 = 0; inct2 < inct1; inct2++)
+_putchar('#');
+
+if (inct1 == size)
+continue;
+
+_putchar('\n');
+}
+}
+_putchar('\n');
 }
