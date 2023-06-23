@@ -12,10 +12,6 @@ void print_triangle(int size);
 *
 *Return : 0
 */
-int main(void)
-{
-    print_triangle(3);
-}
 
 
 void print_triangle(int size) 
