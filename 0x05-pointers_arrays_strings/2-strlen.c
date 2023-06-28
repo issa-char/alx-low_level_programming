@@ -5,7 +5,7 @@
 *@s: first operand
 *
 *Description: works out  and gets us the length of string
-*Return: string length
+*Return: return length
 */
 
 int _strlen(char *s)
