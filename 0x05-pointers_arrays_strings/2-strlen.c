@@ -4,6 +4,7 @@
 *_strlen() - get length of string
 *@s: first operand
 *
+*Description: works out  and gets us the length of string
 *Return: string length
 */
 
