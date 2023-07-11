@@ -1,3 +1,3 @@
 int _abs(int n) {
-    // Implement the logic for _abs function here
+    return (n < 0) ? -n : n;
 }

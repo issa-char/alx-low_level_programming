@@ -1,3 +1,8 @@
 int _strlen(char *s) {
-    // Implement the logic for _strlen function here
+    int length = 0;
+    while (*s != '\0') {
+        length++;
+        s++;
+    }
+    return length;
 }

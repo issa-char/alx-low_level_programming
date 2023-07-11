@@ -1,3 +1,8 @@
 unsigned int _strspn(char *s, char *accept) {
-    // Implement the logic for _strspn function here
+    unsigned int count = 0;
+    while (*s != '\0' && strchr(accept, *s) != NULL) {
+        count++;
+        s++;
+    }
+    return count;
 }

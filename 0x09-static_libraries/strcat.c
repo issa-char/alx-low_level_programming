@@ -1,3 +1,17 @@
 char *_strcat(char *dest, char *src) {
-    // Implement the logic for _strcat function here
+    char *start = dest;
+
+    while (*dest != '\0') {
+        dest++;
+    }
+
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+
+    *dest = '\0';
+
+    return start;
 }

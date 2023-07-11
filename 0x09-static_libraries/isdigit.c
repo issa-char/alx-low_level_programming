@@ -1,3 +1,3 @@
 int _isdigit(int c) {
-    // Implement the logic for _isdigit function here
+    return c >= '0' && c <= '9';
 }

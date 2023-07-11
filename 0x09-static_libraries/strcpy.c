@@ -1,3 +1,10 @@
 char *_strcpy(char *dest, char *src) {
-    // Implement the logic for _strcpy function here
+    char *start = dest;
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    *dest = '\0';
+    return start;
 }
