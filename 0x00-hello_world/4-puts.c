@@ -2,7 +2,7 @@
 
 /**
  * main - print string to standard output
- * 
+ *
  * Return: 0
  */
 int main(void)
