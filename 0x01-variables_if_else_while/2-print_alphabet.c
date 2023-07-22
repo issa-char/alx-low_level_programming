@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
-*main- alphabet game
-Return:  zero
-*/
+ * main - print all the letters of the alphabet
+ *
+ * Return: 0
+ */
 int main(void)
 {
-    char i = 'a';
-    
-    while (i <= 'z')
-    {
-        putchar (i);
-        i++;
-    }
+	char n = 'a';
 
-    putchar('\n');
+	while (n <= 'z')
+	{
+		putchar(n);
+		n++;
+	}
+	putchar('\n');
 
-    return 0;
+	return (0);
 }
