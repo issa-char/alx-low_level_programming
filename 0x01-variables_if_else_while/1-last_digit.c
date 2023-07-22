@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
-
+/**
+ * main - get random no. find last digit  and compare with condition
+ *
+ * Return: nothing
+ */
 int main(void)
 {
 	int l, n;
