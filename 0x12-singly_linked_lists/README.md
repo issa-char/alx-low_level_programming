@@ -5,7 +5,8 @@ C Algorithm Data structure
 
 
 ## Concept 
-    * Data structures
+
+* Data structures
 
 ## Objective
 Explain to anyone data structues and linked lists, without the help of Google
@@ -28,5 +29,5 @@ Explain to anyone data structues and linked lists, without the help of Google
   * prinf, puts, calloc, realloc forbidden
   * use _putchar
   * include function prototypes in lists.h
-  * header fils guarded
+  * header files guarded
 
