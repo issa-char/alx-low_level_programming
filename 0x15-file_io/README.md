@@ -1,6 +1,6 @@
-0x15. C - File I/O
+## 0x15. C - File I/O
 
-c Syscall
+## C Syscall
 
 ## Resources
 * file descriptors
