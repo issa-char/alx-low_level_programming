@@ -10,6 +10,6 @@ int get_endianness(void)
 		unsigned int n = 1;
 		char *p = (char *)&n;
 
-		return (*p == 1) ? 1 : 0; 
+		return ((*p == 1) ? 1 : 0);
 }
 
