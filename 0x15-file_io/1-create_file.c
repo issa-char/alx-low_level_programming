@@ -21,9 +21,9 @@
 			return (-1);
 		}
 
-		if (t_con != NULL)
+		if (text_content != NULL)
 		{
-			ssize_t B_wr = write(fd, t_con, strlen(t_con));
+			ssize_t B_wr = write(fd, text_content, strlen(text_content));
 
 			if (B_wr == -1)
 			{
