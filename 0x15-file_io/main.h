@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#define BUFF_SIZE 1024
 
 
 
