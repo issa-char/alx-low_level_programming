@@ -26,3 +26,34 @@ void print_elf_header_info(Elf64_Ehdr *header)
     }
     printf("Entry point address:               0x%lx\n", (unsigned long)header->e_entry);
 }
+
+
+int main(int argc, char **argv) 
+{
+    int fd;
+	Elf64_Ehdr header;
+	ssize_t read_bytes;
+	if (argc != 2) {
+        dprintf(2, "Usage: %s elf_filename\n", argv[0]);
+        return 98;
+    }
+
+    fd = open(argv[1], O_RDONLY);
+    if (fd == -1) {
+        dprintf(2, "Error: Cannot open file '%s'\n", argv[1]);
+        return 98;
+    }
+
+    read_bytes = read(fd, &header, sizeof(header));
+
+    if (read_bytes != sizeof(header) || memcmp(header.e_ident, ELFMAG, SELFMAG) != 0) {
+        dprintf(2, "Error: Not an ELF file: '%s'\n", argv[1]);
+        close(fd);
+        return 98;
+    }
+
+    print_elf_header_info(&header);
+
+    close(fd);
+    return 0;
+}
