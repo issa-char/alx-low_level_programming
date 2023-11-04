@@ -4,12 +4,20 @@
 #include <unistd.h>
 #include <elf.h>
 
+/**
+ * print_error - error
+ * @message: message
+ */
 void print_error(const char *message)
 {
 	fprintf(stderr, "%s\n", message);
 	exit(98);
 }
 
+/**
+ * print_elf_header_info - header info
+ * @ header: head
+ */
 void print_elf_header_info(Elf64_Ehdr header)
 {
 	int i;
@@ -29,6 +37,13 @@ void print_elf_header_info(Elf64_Ehdr header)
 	printf("  Entry point address:               0x%lx\n", header.e_entry);
 }
 
+/**
+ * main - main
+ * @argc: first arg
+ * @argv: second arg
+ *
+ * Return: zero
+ */
 int main(int argc, char *argv[])
 {
 	int fd;
