@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <elf.h>
 
 #define BUFFER_SIZE 1024
 
