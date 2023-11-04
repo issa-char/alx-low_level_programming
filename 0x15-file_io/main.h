@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <elf.h>
+void print_elf_header(Elf64_Ehdr *header);
 
 #define BUFFER_SIZE 1024
 
